@@ -1,0 +1,17 @@
+.texto-menor{
+    font-size: 13px;
+}
+
+.div-facilidades{
+    width: 325px;
+}
+
+.div-novedades{
+    width:325px;
+}
+
+@media (min-width:768px){
+    .div-novedades{
+        width:696px;
+    }
+}
