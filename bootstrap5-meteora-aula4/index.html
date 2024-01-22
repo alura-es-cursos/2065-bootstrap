@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Meteora</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-black navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1 class="m-0"><img class="d-block" src="./assets/logo-meteora.png" alt="Logo de la tienda Meteora">
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tiendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promociones</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 rounded-0" type="search" placeholder="Ingresa el Producto"
+                        aria-label="Search">
+                    <button class="btn btn-outline-light rounded-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100 img-fluid d-md-none" src="./assets/Mobile/banner1-mobile.png"
+                    alt="Modelo femenina vistiendo una blusa rosa fluorescente, en fondo lila">
+                <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="./assets/Tablet/banner1-tablet.png"
+                    alt="Modelo femenina vistiendo una blusa rosa fluorescente, en fondo lila">
+                <img class="w-100 img-fluid d-none d-xl-block" src="./assets/Desktop/banner1-desktop.png"
+                    alt="Modelo femenina vistiendo una blusa rosa fluorescente, en fondo lila">
+            </div>
+            <div class="carousel-item position-relative">
+                <img class="w-100 img-fluid d-md-none" src="./assets/Mobile/banner2-mobile.png"
+                    alt="Modelo femenina vistiendo una blusa negra, en fondo rosa">
+                <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="./assets/Tablet/banner2-tablet.png"
+                    alt="Modelo femenina vistiendo una blusa negra, en fondo rosa">
+                <img class="w-100 img-fluid d-none d-xl-block" src="./assets/Desktop/banner2-desktop.png"
+                    alt="Modelo femenina vistiendo una blusa negra, en fondo rosa">
+                <div class="carousel-caption position-absolute posicion">
+                    <h5 class="fs-1">COLECCIÓN ATEMPORAL</h5>
+                    <p class="fs-4">Estilo y calidad que duran.</p>
+                </div>
+            </div>
+            <div class="carousel-item position-relative">
+                <img class="w-100 img-fluid d-md-none" src="./assets/Mobile/banner3-mobile.png"
+                    alt="Modelo masculino vistiendo un traje plomo y camisa blanca, en fondo naranja">
+                <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="./assets/Tablet/banner3-tablet.png"
+                    alt="Modelo masculino vistiendo un traje plomo y camisa blanca, en fondo naranja">
+                <img class="w-100 img-fluid d-none d-xl-block" src="./assets/Desktop/banner3-desktop.png"
+                    alt="Modelo masculino vistiendo un traje plomo y camisa blanca, en fondo naranja">
+                <div class="carousel-caption position-absolute posicion">
+                    <h5 class="fs-1">COLECCIÓN ATEMPORAL</h5>
+                    <p class="fs-4">¡Alto impacto visual, bajo impacto ambiental!.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <h2 class="text-center">Búsqueda por Categoría:</h2>
+
+    <div class="container row mx-auto g-4">
+        <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-header bg-black text-bg-dark">
+                    <p class="text-center">Categoría</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-header bg-black text-bg-dark">
+                    <p class="text-center">Categoría</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-header bg-black text-bg-dark">
+                    <p class="text-center">Categoría</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-header bg-black text-bg-dark">
+                    <p class="text-center">Categoría</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-header bg-black text-bg-dark">
+                    <p class="text-center">Categoría</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-header bg-black text-bg-dark">
+                    <p class="text-center">Categoría</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="text-center">¡Productos que están en Alta!</h2>
+
+    <div class="container row mx-auto">
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-body">
+                    <h5 class="card-title">Producto</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <p>$30</p>
+                    <a href="#" class="btn btn-primary color-lila rounded-0 border-0">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-body">
+                    <h5 class="card-title">Producto</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <p>$30</p>
+                    <a href="#" class="btn btn-primary color-lila rounded-0 border-0">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-body">
+                    <h5 class="card-title">Producto</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <p>$30</p>
+                    <a href="#" class="btn btn-primary color-lila rounded-0  border-0">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-body">
+                    <h5 class="card-title">Producto</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <p>$30</p>
+                    <a href="#" class="btn btn-primary color-lila rounded-0  border-0">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-body">
+                    <h5 class="card-title">Producto</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <p>$30</p>
+                    <a href="#" class="btn btn-primary color-lila rounded-0  border-0">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                        dy=".3em">Image
+                        cap</text>
+                </svg>
+                <div class="card-body">
+                    <h5 class="card-title">Producto</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <p>$30</p>
+                    <a href="#" class="btn btn-primary color-lila rounded-0  border-0">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="pb-4 bg-black text-bg-dark">
+        <h2 class="text-center">Conoce todas nuestras facilidades</h2>
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-4 px-3">
+            <div class="div-facilidades d-flex align-items-center">
+                <div class="fs-1"><i class="bi bi-x-diamond color-amarillo"></i></div>
+                <div class="ms-3">
+                    <div class="mb-1 color-amarillo">PAGUE EN CUOTAS</div>
+                    <div class="texto-menor">Realiza tus compras con tarjeta de crédito y paga en hasta 12 cuotas</div>
+                </div>
+
+            </div>
+            <div class="div-facilidades d-flex align-items-center">
+                <div class="fs-1"><i class="bi bi-arrow-repeat color-amarillo"></i></div>
+                <div class="ms-3">
+                    <div class="mb-1 color-amarillo">CAMBIO GRATIS</div>
+                    <div class="texto-menor">Cambio sin costo en hasta 30 días</div>
+                </div>
+            </div>
+            <div class="div-facilidades d-flex align-items-center">
+                <div class="fs-1"><i class="bi bi-flower1 color-amarillo"></i></div>
+                <div class="ms-3">
+                    <div class="mb-1 color-amarillo">SOSTENIBILIDAD</div>
+                    <div class="texto-menor">Moda responsable que respeta el medio ambiente.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <form class="border border-secondary my-3 p-3 text-center div-novedades mx-auto">
+        <h5>¿Quieres recibir nuestras novedades, promociones exclusivas y un 10% de descuento en tu primera
+            compra?¡Regístrate!</h5>
+        <div class="input-group my-3">
+            <input type="email" class="form-control border-secondary rounded-0"
+                placeholder="Ingresa tu correo electrónico" aria-label="Ingresa tu correo electrónico"
+                aria-describedby="button-addon2" />
+            <button type="button" id="button-addon2">Enviar</button>
+        </div>
+    </form>
+
+    <footer>
+        <p class="text-center py-3 bg-black text-bg-dark">2024 <i class="bi bi-c-circle"></i> Desarrollado por Alura |
+            Proyecto ficticio sin fines comerciales</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
